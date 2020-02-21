@@ -1,0 +1,13 @@
+java.text.DecimalFormat 格式化數字用
+
+public static void main(String[] args) {
+		float a = 1.0f-0.9f; 
+		float b = 0.7f-0.6f; 
+		
+		System.out.println(a); //0.100000024
+		System.out.println(b); //0.099999964
+		
+		DecimalFormat df = new DecimalFormat("0.000000");
+		System.out.println(df.format(a)); //0.100000
+		System.out.println(df.format(b)); //0.100000
+	}
